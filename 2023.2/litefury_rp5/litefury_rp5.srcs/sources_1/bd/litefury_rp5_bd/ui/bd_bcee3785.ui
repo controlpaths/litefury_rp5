@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.835173",
+   "Default View_TopLeft":"-123,-36",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port pcie_mgt -pg 1 -lvl 4 -x 1060 -y 140 -defaultsOSRD
+preplace port pcie_clkin -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_pcie_reset -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace portBus pcie_clkreq_l -pg 1 -lvl 4 -x 1060 -y 60 -defaultsOSRD
+preplace portBus leds -pg 1 -lvl 4 -x 1060 -y 450 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 2 -x 560 -y 180 -defaultsOSRD
+preplace inst util_ds_buf -pg 1 -lvl 1 -x 200 -y 280 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 900 -y 60 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 1 -x 200 -y 150 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 900 -y 440 -defaultsOSRD
+preplace inst xdma_0_axi_periph -pg 1 -lvl 2 -x 560 -y 420 -defaultsOSRD
+preplace netloc reset_rtl_0_1 1 0 2 20J 70 350J
+preplace netloc util_ds_buf_IBUF_OUT 1 1 1 380J 170n
+preplace netloc xlconstant_0_dout 1 3 1 N 60
+preplace netloc xdma_0_axi_aresetn 1 0 3 50 60 370J 30 750
+preplace netloc xdma_0_axi_aclk 1 0 3 40 50 360J 20 760
+preplace netloc axi_gpio_0_gpio_io_o 1 3 1 N 450
+preplace netloc diff_clock_rtl_0_1 1 0 1 NJ 280
+preplace netloc xdma_0_pcie_mgt 1 2 2 NJ 140 N
+preplace netloc xdma_0_M_AXIS_H2C_0 1 0 3 30 10 NJ 10 740
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 1 N 150
+preplace netloc xdma_0_M_AXI_LITE 1 1 2 390 40 730
+preplace netloc xdma_0_axi_periph_M00_AXI 1 2 1 N 420
+levelinfo -pg 1 0 200 560 900 1060
+pagesize -pg 1 -db -bbox -sgen -130 0 1240 540
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"3",
+   "da_xdma_cnt":"1"
+}

@@ -1,0 +1,24 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-243,-114",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port pcie_mgt -pg 1 -lvl 3 -x 680 -y 100 -defaultsOSRD
+preplace port pcie_clkin_clk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_pcie_reset -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 2 -x 490 -y 140 -defaultsOSRD
+preplace inst util_ds_buf -pg 1 -lvl 1 -x 170 -y 90 -defaultsOSRD
+preplace netloc reset_rtl_0_1 1 0 2 NJ 160 NJ
+preplace netloc util_ds_buf_IBUF_OUT 1 1 1 320J 80n
+preplace netloc xdma_0_pcie_mgt 1 2 1 N 100
+preplace netloc diff_clock_rtl_0_1 1 0 1 NJ 90
+levelinfo -pg 1 0 170 490 680
+pagesize -pg 1 -db -bbox -sgen -160 0 860 280
+"
+}
+{
+   "da_board_cnt":"3",
+   "da_xdma_cnt":"1"
+}

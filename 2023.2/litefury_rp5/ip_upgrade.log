@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Feb 17 17:09:48 2024
+| Host         : friday running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'litefury_rp5_bd_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of litefury_rp5_bd_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Feb 17 17:09:47 2024
+| Host         : friday running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'litefury_rp5_bd_xdma_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of litefury_rp5_bd_xdma_0_0 (xilinx.com:ip:xdma:4.1 (Rev. 26)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat Feb 17 17:09:47 2024
+| Host         : friday running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2L
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'litefury_rp5_bd_util_ds_buf_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of litefury_rp5_bd_util_ds_buf_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 31)) to current project options.
+

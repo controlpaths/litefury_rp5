@@ -1,0 +1,163 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tfgg484-2",
+      "gen_directory": "../../../../litefury_rp5.gen/sources_1/bd/design_1litefury_rp5_bd",
+      "name": "design_1litefury_rp5_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "xdma_0": "",
+      "util_ds_buf": ""
+    },
+    "interface_ports": {
+      "pcie_mgt": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie_7x_mgt:1.0",
+        "vlnv": "xilinx.com:interface:pcie_7x_mgt_rtl:1.0",
+        "port_maps": {
+          "rxn": {
+            "physical_name": "pcie_mgt_rxn",
+            "direction": "I"
+          },
+          "rxp": {
+            "physical_name": "pcie_mgt_rxp",
+            "direction": "I"
+          },
+          "txn": {
+            "physical_name": "pcie_mgt_txn",
+            "direction": "O"
+          },
+          "txp": {
+            "physical_name": "pcie_mgt_txp",
+            "direction": "O"
+          }
+        }
+      },
+      "pcie_clkin_clk": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        },
+        "port_maps": {
+          "CLK_P": {
+            "physical_name": "pcie_clkin_clk_clk_p",
+            "direction": "I"
+          },
+          "CLK_N": {
+            "physical_name": "pcie_clkin_clk_clk_n",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "ports": {
+      "pcie_reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      }
+    },
+    "components": {
+      "xdma_0": {
+        "vlnv": "xilinx.com:ip:xdma:4.1",
+        "ip_revision": "26",
+        "xci_name": "design_1litefury_rp5_bd_xdma_0_0",
+        "xci_path": "ip/design_1litefury_rp5_bd_xdma_0_0/design_1litefury_rp5_bd_xdma_0_0.xci",
+        "inst_hier_path": "xdma_0",
+        "parameters": {
+          "axi_data_width": {
+            "value": "64_bit"
+          },
+          "axilite_master_en": {
+            "value": "true"
+          },
+          "axisten_freq": {
+            "value": "125"
+          },
+          "pl_link_cap_max_link_speed": {
+            "value": "5.0_GT/s"
+          },
+          "xdma_axi_intf_mm": {
+            "value": "AXI_Stream"
+          }
+        },
+        "interface_ports": {
+          "M_AXI_LITE": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "M_AXI_LITE",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "M_AXI_LITE": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
+      },
+      "util_ds_buf": {
+        "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
+        "ip_revision": "31",
+        "xci_name": "design_1litefury_rp5_bd_util_ds_buf_0",
+        "xci_path": "ip/design_1litefury_rp5_bd_util_ds_buf_0/design_1litefury_rp5_bd_util_ds_buf_0.xci",
+        "inst_hier_path": "util_ds_buf",
+        "parameters": {
+          "C_BUF_TYPE": {
+            "value": "IBUFDSGTE"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "diff_clock_rtl_0_1": {
+        "interface_ports": [
+          "pcie_clkin_clk",
+          "util_ds_buf/CLK_IN_D"
+        ]
+      },
+      "xdma_0_pcie_mgt": {
+        "interface_ports": [
+          "pcie_mgt",
+          "xdma_0/pcie_mgt"
+        ]
+      }
+    },
+    "nets": {
+      "reset_rtl_0_1": {
+        "ports": [
+          "pcie_reset",
+          "xdma_0/sys_rst_n"
+        ]
+      },
+      "util_ds_buf_IBUF_OUT": {
+        "ports": [
+          "util_ds_buf/IBUF_OUT",
+          "xdma_0/sys_clk"
+        ]
+      }
+    }
+  }
+}
